@@ -67,4 +67,3 @@ Directory: `hw3-flash-sale/`
 - **Verified:** The feature has been tested against its acceptance criteria.
 
 Task status must reflect actual implementation and testing. A successful commit alone does not prove that a homework is complete.
-'@ | Set-Content -Encoding utf8 TASK_DECOMPOSITION.md
