@@ -1,0 +1,215 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.app-container {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  color: #a78bfa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.app-header h1 {
+  margin: 12px 0;
+  font-size: clamp(28px, 5vw, 46px);
+}
+
+.app-header > p:last-child {
+  color: #aaa9b7;
+  line-height: 1.6;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.panel {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid #343344;
+  border-radius: 18px;
+  background: #1b1a27;
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 19px;
+}
+
+.phase-display {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  margin: 18px 0;
+  border-radius: 12px;
+  background: #282638;
+}
+
+.phase-display span,
+.phase-display small {
+  color: #aaa9b7;
+}
+
+.phase-display strong {
+  color: #c4b5fd;
+  font-size: 23px;
+}
+
+.action-buttons,
+.message-form,
+.effort-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 9px;
+  background: #8b5cf6;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.15);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.danger-button {
+  background: #dc465f;
+}
+
+.secondary-button {
+  background: #454354;
+}
+
+.effort-form {
+  flex-direction: column;
+}
+
+.effort-form > div,
+.message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid #454354;
+  border-radius: 8px;
+  background: #282638;
+  color: white;
+}
+
+label {
+  color: #d5d3df;
+  font-size: 14px;
+}
+
+.effort-results {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.effort-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 10px;
+  border-radius: 10px;
+  background: #282638;
+  overflow-wrap: anywhere;
+}
+
+.effort-card span {
+  color: #aaa9b7;
+  font-size: 12px;
+}
+
+.effort-card strong {
+  font-size: 20px;
+}
+
+.signal-count {
+  color: #aaa9b7;
+  font-size: 13px;
+}
+
+.timer-status {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #282638;
+}
+
+.timer-status strong {
+  display: block;
+  margin: 10px 0;
+  color: #c4b5fd;
+  font-size: 28px;
+}
+
+.timer-status button {
+  margin: 5px 5px 5px 0;
+}
+
+.red-flag-alert {
+  margin-top: 20px;
+  color: #fda4af;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #777586;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .app-container {
+    padding: 28px 0;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .effort-results {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons button {
+    flex: 1 1 auto;
+  }
+}
