@@ -1,0 +1,133 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.arena {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top, #45513b, transparent 55%),
+    #101713;
+  color: #f5f5f0;
+}
+
+.claim-card {
+  width: min(520px, 100%);
+  padding: 42px 32px;
+  border: 1px solid rgba(216, 182, 107, 0.35);
+  border-radius: 16px;
+  background: #1b241e;
+  text-align: center;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.4);
+}
+
+.event-label {
+  color: #d8b66b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.crate-icon {
+  margin: 30px 0 10px;
+  font-size: 76px;
+}
+
+h1 {
+  margin: 10px 0;
+  color: #e5bd67;
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+
+.subtitle {
+  color: #a9b0a8;
+  font-size: 14px;
+}
+
+.inventory-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 35px 0 24px;
+}
+
+.inventory-panel > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px 10px;
+  border: 1px solid rgba(216, 182, 107, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.inventory-label {
+  color: #9da69c;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.inventory-number {
+  color: #f4d58e;
+  font-size: 42px;
+}
+
+.message {
+  min-height: 50px;
+  display: grid;
+  place-items: center;
+  margin: 20px 0;
+  color: #b8c8a9;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.message.error {
+  color: #ff8888;
+}
+
+.claim-button,
+.reset-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.claim-button {
+  background: #d8a63d;
+  color: #171a15;
+}
+
+.claim-button:hover:not(:disabled) {
+  background: #f0c66e;
+}
+
+.reset-button {
+  margin-top: 12px;
+  border: 1px solid rgba(216, 182, 107, 0.35);
+  background: transparent;
+  color: #d8b66b;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.technical-info {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #89938a;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
